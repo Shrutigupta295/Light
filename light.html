@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+.light{
+    background-color: lightsalmon;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-top:100px;
+}
+
+img{
+    width:200px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+
+<script>
+function lightOff()
+{
+    document.getElementById("image").src="b1.jpg";
+}
+
+function lightOn()
+{
+    document.getElementById("image").src="b2.jpg";
+}
+</script>
+
+</head>
+
+
+<body class="light">
+
+<div class="container">
+
+<button onclick="document.getElementById('image').src='b1.jpg'">
+Turn Off Light
+</button>
+
+<img id="image" src="b1.jpg">
+
+<button onclick="document.getElementById('image').src='b2.jpg'">
+Turn On Light
+</button>
+
+</div>
+
+</body>
+</html>
